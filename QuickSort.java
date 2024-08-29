@@ -6,7 +6,7 @@
 
 public class QuickSort {
 
-    public static int partition(int arr[], int low, int high){
+    public static int partition(int []arr, int low, int high){
         int pivot= arr[high];
         int i =low-1;
         for (int j=low;j<high;j++){
@@ -21,8 +21,8 @@ public class QuickSort {
         }
         i++;
         int temp=arr[i];
-        arr[i]=pivot;
-        arr[high]=pivot;
+        arr[i]=arr[high];
+        arr[high]=temp;
         return i;
     }
     public static void  quickSort(int arr[],int low,int high){
@@ -32,8 +32,6 @@ public class QuickSort {
             quickSort(arr, low, pivotIndex-1);
             quickSort(arr, pivotIndex+1, high);
         }
-
-
     }
 
     public static void main(String args[]){
