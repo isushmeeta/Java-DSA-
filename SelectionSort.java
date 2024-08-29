@@ -10,21 +10,22 @@ public class SelectionSort {
         System.out.println();
     }
 
-    public static void main(String arr[]){
+    public static void main(String args[]){
         int arr2[]={8,12,15,9,4,1};
         //Selection Sort
-        for (int i=0;i<arr.length-1;i++){
+        for (int i=0;i<arr2.length-1;i++){
+            int smallest=i;
+
             for (int j=i+1;j<arr2.length;j++){
-                if (arr2[j]<arr2[i]){
-                    int temp= arr2[i];
-                    arr2[j]= arr2[j+1];
-                    arr2[j]= temp;
-                }
+                if (arr2[j]<arr2[smallest]){
+                    smallest=j;
+                }   
             }
+            int temp= arr2[smallest];
+            arr2[smallest]= arr2[i];
+            arr2[i]= temp;
         }
-    printArray(arr2);
-
-
+        printArray(arr2);
             
     }
     
