@@ -2,7 +2,7 @@
 //of positive integers, rearrange the array alternately
 // i.e first element should be a maximum value, at second position minimum value, 
 //at third position second max, at fourth position second min, and so on.
-
+//Time and space complexity O(N)
 public class MinMaxRearrange {
     // Function to rearrange the array elements alternately
     static void rearrange(long[] arr, int n) {
