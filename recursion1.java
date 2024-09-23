@@ -1,7 +1,7 @@
 public class recursion1 {
 
     public static void printNumb(int n){
-        if(n==0){
+        if(n==0){//base case
             return;
         }
         System.out.println(n);
@@ -13,3 +13,4 @@ public class recursion1 {
         printNumb(n);//5
     }
 }
+//memory is used in every step as result it takes memory more.
