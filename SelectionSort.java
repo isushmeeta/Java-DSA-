@@ -1,4 +1,4 @@
-//Time Complexcity is O(n^2) as there are two nexted loops
+ //Time Complexcity is O(n^2) as there are two nexted loops
 //works well with small datasets
 //In place algorithm as it doesnt require extra space
 
@@ -16,8 +16,8 @@ public class SelectionSort {
         for (int i=0;i<arr2.length-1;i++){
             int smallest=i;
 
-            for (int j=i+1;j<arr2.length;j++){
-                if (arr2[j]<arr2[smallest]){
+            for (int j=i+1;j<arr2.length;j++){//here as the last element isnt sorted so we will take the array length
+                if (arr2[j]<arr2[smallest]){//  if smallest is greater than jth element then sammlest will be j
                     smallest=j;
                 }   
             }
