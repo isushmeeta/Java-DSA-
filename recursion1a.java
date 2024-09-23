@@ -17,3 +17,10 @@ public class recursion1a {
     }
     
 }
+// main function was n=1;
+// it called printNumb n=1 
+//it calledPrintNumb n=2
+// it called printNumb n=3 
+//it calledPrintNumb n=4
+// it called printNumb n=5 
+//it calledPrintNumb n=6
