@@ -4,7 +4,6 @@ public class fibonaccitoNthterm {
         if(n==0){//base case
             return;
         }
-
         int c=a+b;
         System.out.println(c);
         printFibonacci(b, c, n-1);//(1,1,5-1=4) c=2
