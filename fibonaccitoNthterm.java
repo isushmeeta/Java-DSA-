@@ -1,7 +1,7 @@
 public class fibonaccitoNthterm {
 
     public static void printFibonacci(int a, int b, int n){
-        if(n==0){
+        if(n==0){//base case
             return;
         }
 
@@ -13,10 +13,10 @@ public class fibonaccitoNthterm {
 
     public static void main(String args[]){
         int a=0, b=1;
-        System.out.println(a);
-        System.out.println(b);
+        System.out.println(a);// term 1
+        System.out.println(b); //term 2
         int n=7;
-        printFibonacci(a, b, n-2);
+        printFibonacci(a, b, n-2); //(0,1,7-2=5)
 
     }
 }
