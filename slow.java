@@ -1,5 +1,5 @@
-//two sum, closest two sum, three sum O(n)
-public class twoPointers {
+//two sum, closest two sum, three sum O(n^2)
+public class slow {
 
     public static boolean twosum(int [] arr,int target){
         int n=arr.length;
